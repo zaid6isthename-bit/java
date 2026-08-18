@@ -1,0 +1,25 @@
+{
+  "name": "java-experiments-downloader",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "create-zip": "node scripts/create-zip.js",
+    "verify": "node scripts/verify.js",
+    "dev": "npm run create-zip && next dev",
+    "build": "npm run create-zip && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.3.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "archiver": "^7.0.1",
+    "typescript": "^5.8.0",
+    "yauzl": "^3.2.0"
+  }
+}
